@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "LBAudioDetective.h"
+
 
 @interface ViewController ()
 

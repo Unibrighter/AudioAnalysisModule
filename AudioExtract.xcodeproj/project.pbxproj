@@ -15,6 +15,9 @@
 		CA89B7F61EC1B65900CEEB41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA89B7F41EC1B65900CEEB41 /* LaunchScreen.storyboard */; };
 		CA89B8011EC1B65900CEEB41 /* AudioExtractTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89B8001EC1B65900CEEB41 /* AudioExtractTests.m */; };
 		CA89B80C1EC1B65900CEEB41 /* AudioExtractUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89B80B1EC1B65900CEEB41 /* AudioExtractUITests.m */; };
+		CAC5861C1ED66E8000DA328E /* LBAudioDetective.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC586171ED66E8000DA328E /* LBAudioDetective.m */; };
+		CAC5861D1ED66E8000DA328E /* LBAudioDetectiveFingerprint.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC586191ED66E8000DA328E /* LBAudioDetectiveFingerprint.m */; };
+		CAC5861E1ED66E8000DA328E /* LBAudioDetectiveFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC5861B1ED66E8000DA328E /* LBAudioDetectiveFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CA89B8071EC1B65900CEEB41 /* AudioExtractUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioExtractUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA89B80B1EC1B65900CEEB41 /* AudioExtractUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioExtractUITests.m; sourceTree = "<group>"; };
 		CA89B80D1EC1B65900CEEB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC586161ED66E8000DA328E /* LBAudioDetective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBAudioDetective.h; sourceTree = "<group>"; };
+		CAC586171ED66E8000DA328E /* LBAudioDetective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBAudioDetective.m; sourceTree = "<group>"; };
+		CAC586181ED66E8000DA328E /* LBAudioDetectiveFingerprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBAudioDetectiveFingerprint.h; sourceTree = "<group>"; };
+		CAC586191ED66E8000DA328E /* LBAudioDetectiveFingerprint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBAudioDetectiveFingerprint.m; sourceTree = "<group>"; };
+		CAC5861A1ED66E8000DA328E /* LBAudioDetectiveFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBAudioDetectiveFrame.h; sourceTree = "<group>"; };
+		CAC5861B1ED66E8000DA328E /* LBAudioDetectiveFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBAudioDetectiveFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		CA89B7DA1EC1B65900CEEB41 = {
 			isa = PBXGroup;
 			children = (
+				CAC586151ED66E8000DA328E /* LBAudioDetective */,
 				CA89B7E51EC1B65900CEEB41 /* AudioExtract */,
 				CA89B7FF1EC1B65900CEEB41 /* AudioExtractTests */,
 				CA89B80A1EC1B65900CEEB41 /* AudioExtractUITests */,
@@ -138,6 +148,19 @@
 				CA89B80D1EC1B65900CEEB41 /* Info.plist */,
 			);
 			path = AudioExtractUITests;
+			sourceTree = "<group>";
+		};
+		CAC586151ED66E8000DA328E /* LBAudioDetective */ = {
+			isa = PBXGroup;
+			children = (
+				CAC586161ED66E8000DA328E /* LBAudioDetective.h */,
+				CAC586171ED66E8000DA328E /* LBAudioDetective.m */,
+				CAC586181ED66E8000DA328E /* LBAudioDetectiveFingerprint.h */,
+				CAC586191ED66E8000DA328E /* LBAudioDetectiveFingerprint.m */,
+				CAC5861A1ED66E8000DA328E /* LBAudioDetectiveFrame.h */,
+				CAC5861B1ED66E8000DA328E /* LBAudioDetectiveFrame.m */,
+			);
+			path = LBAudioDetective;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC5861E1ED66E8000DA328E /* LBAudioDetectiveFrame.m in Sources */,
 				CA89B7EE1EC1B65900CEEB41 /* ViewController.m in Sources */,
 				CA89B7EB1EC1B65900CEEB41 /* AppDelegate.m in Sources */,
+				CAC5861D1ED66E8000DA328E /* LBAudioDetectiveFingerprint.m in Sources */,
+				CAC5861C1ED66E8000DA328E /* LBAudioDetective.m in Sources */,
 				CA89B7E81EC1B65900CEEB41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +535,7 @@
 				CA89B8121EC1B65900CEEB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA89B8131EC1B65900CEEB41 /* Build configuration list for PBXNativeTarget "AudioExtractTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +544,7 @@
 				CA89B8151EC1B65900CEEB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA89B8161EC1B65900CEEB41 /* Build configuration list for PBXNativeTarget "AudioExtractUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +553,7 @@
 				CA89B8181EC1B65900CEEB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
